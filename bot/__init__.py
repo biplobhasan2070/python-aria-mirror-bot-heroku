@@ -40,14 +40,10 @@ except KeyError:
 aria2 = aria2p.API(
     aria2p.Client(
         host="http://localhost",
-        port=8010,
+        port= 6800,
         secret="",
     )
 )
-
-DOWNLOAD_DIR = None
-BOT_TOKEN = None
-
 download_dict_lock = threading.Lock()
 status_reply_dict_lock = threading.Lock()
 # Key: update.effective_chat.id
